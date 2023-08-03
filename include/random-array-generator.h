@@ -28,3 +28,11 @@ int* createRandomArray(int array_size) {
 
     return array;
 }
+
+void printArray(int array[], int array_length){
+	printf("[");
+	for(int i = 0; i < array_length -1;i++){
+		printf("%d, ",array[i]);
+	}
+	printf("%d]", array[array_length - 1]);
+}

@@ -12,12 +12,9 @@ int main(){
 	scanf("%d", &array_length);
 	int* arr = createRandomArray(array_length);
 
-	printf("Unsorted array: [");
+	printf("\nUnsorted array: ");
 
-	for(int i = 0;i < array_length - 1; i++){
-		printf("%d, ",arr[i]);
-	}	
-	printf("%d]\n",arr[array_length - 1]);
+	printArray(arr, array_length);
 
 
 
@@ -33,11 +30,8 @@ int main(){
 			}
 		}
 	}
-	printf("Sorted array: [");
-	for(int i = 0; i < array_length - 1; i++){
-		printf("%d, ",arr[i]);
-	}
-	printf("%d]",arr[array_length - 1]);
+	printf("\nSorted array: ");
+	printArray(arr, array_length);
 
 	free(arr);
 	return 0;
